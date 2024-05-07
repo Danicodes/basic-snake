@@ -1,0 +1,31 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --number-of-cols-rows: 10
+    }
+}
+
+body {
+    height: 100%;
+    display: center;
+}
+
+#game-grid {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    
+    background-color: darkslategrey;
+    border-radius: 5;
+    border-width: 1px;
+    border-color: black;
+    
+    /* Game space */
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    gap: 2px;
+
+}
+
+#game-grid > .bg-item {
+    background-color: #590277;
+    opacity: 25%;
+}
