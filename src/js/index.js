@@ -1,3 +1,6 @@
 import { createGameBoardBackground } from './gameBg'
 
-createGameBoardBackground()
+let gameBoard = createGameBoardBackground();
+let initialSnake = document.createElement('p');
+initialSnake.innerHTML = '----<';
+gameBoard.appendChild(initialSnake);
