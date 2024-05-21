@@ -4,6 +4,12 @@
     }
 }
 
+#game-grid  p {
+    color: whitesmoke;
+    display: center;
+    font-weight: bold; 
+}
+
 body {
     height: 100%;
     display: center;
@@ -11,10 +17,9 @@ body {
 
 #game-grid {
     display: grid;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     
-    background-color: darkslategrey;
     border-radius: 5;
     border-width: 1px;
     border-color: black;
@@ -23,9 +28,12 @@ body {
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
     gap: 2px;
 
+    justify-content: center;
+
 }
 
 #game-grid > .bg-item {
     background-color: #590277;
-    opacity: 25%;
+    opacity: 55%;
+    text-align: center;
 }
